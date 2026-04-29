@@ -1,0 +1,41 @@
+@font-face
+{
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Light.ttf)
+}
+
+@font-face
+{
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --color-white: lch(100% 0.01 296.81);
+    --color-black: lch(0% 0 0);
+    --color-dark: lch(16.5% 7.24 274.76);
+}
+
+html
+{
+    scroll-behavior: smooth;
+    font-family: Montserrat-Medium;
+}
+
+.hero
+{
+    .header-hero
+    {
+        h1
+        {
+            font-family: Montserrat-Bold;
+        }
+    }
+}
