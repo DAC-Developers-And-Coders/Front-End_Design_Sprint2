@@ -231,3 +231,56 @@ footer
         transform: scale(1.1);
     }
 }
+
+#tool-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5dvh;
+}
+
+.photo-stages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    gap: 4dvh;
+
+    h1 
+    {
+    width: 100%;
+    font-family: var(--bold-font);
+    font-size: 3vmax;
+    margin-bottom: 2dvh;
+    }
+
+    img 
+    {
+    width: 100%;
+    max-width: 28dvh;
+    height: auto;
+    border-radius: 1.6dvh;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-bottom: 1.5dvh;
+    }
+    img:hover 
+    {
+    transform: scale(1.05);
+    }
+    h3 
+    {
+    font-family: var(--bold-font);
+    font-size: 0.95vmax;
+    text-align: center;
+    line-height: 1.2;
+    }
+}
+
+.stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30dvh;
+}
