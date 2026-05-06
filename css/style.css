@@ -61,7 +61,7 @@ ul
 
 .hero
 {
-    height: 97dvh;
+    height: 30dvh;
 
     .header-hero
     {
@@ -151,6 +151,14 @@ ul
             border: 2px, solid, var(--color-grey);
         }
     }
+}
+
+.banner-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10dvh;
 }
 
 .banners
