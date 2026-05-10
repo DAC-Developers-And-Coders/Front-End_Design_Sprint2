@@ -62,94 +62,95 @@ ul
 .hero
 {
     min-height: 324px;
+}
 
-    .header-hero
-    {
-        font-family: var(--medium-font);
-        margin-top: 7dvh;
-        min-height: 25dvh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 3dvh;
+.header-hero
+{
+    font-family: var(--medium-font);
+    margin-top: 7dvh;
+    min-height: 25dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3dvh;
+}
 
-        .div-logos
-        {
-            display: flex;
-            align-items: center;
-            gap: 2dvh;
+.div-logos
+{
+    display: flex;
+    align-items: center;
+    gap: 2dvh;
+}
 
-            .logo-DAC
-            {
-                width: 10dvh;
-            }
+.logo-DAC
+{
+    width: 10dvh;
+}
 
-            .logo-JOVI
-            {
-                width: 15dvh;
-            }
-        }
+.logo-JOVI
+{
+    width: 15dvh;
+}
 
-        .fonte-destacada
-        {
-            font-family: var(--extra-bold-font);
-        }
+.fonte-destacada
+{
+    font-family: var(--extra-bold-font);
+}
 
-        h1
-        {
-            font-family: var(--bold-font);
-            font-size: 3vmax;
-        }
+.header-hero h1
+{
+    font-family: var(--bold-font);
+    font-size: 3vmax;
+}
 
-        p
-        {
-            color: var(--color-black-alpha);
-            font-size: 1vmax;
-            text-wrap: wrap;
-            width: 31%;
-        }
+.header-hero p
+{
+    color: var(--color-black-alpha);
+    font-size: 1vmax;
+    text-wrap: wrap;
+    width: 31%;
+}
 
-        li
-        {
-            list-style: none;
-            border-radius: 12px;
+.header-hero li
+{
+    list-style: none;
+    border-radius: 12px;
 
-            transition: .5s;
-        }
+    transition: .5s;
+}
 
-        li a
-        {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1dvh 2dvh;
-            font-size: 1vmax;
-            text-decoration: none;
-            color: var(--color-black);
-        }
+.header-hero li a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1dvh 2dvh;
+    font-size: 1vmax;
+    text-decoration: none;
+    color: var(--color-black);
+}
 
-        li:hover
-        {
-            scale: 0.95;
-        }
+.header-hero li:hover
+{
+    scale: 0.95;
+}
 
-        .black-li
-        {
-            a
-            {
-                color: var(--color-white);
-            }
-            background-color: var(--color-black);
-        }
+.header-hero .black-li
+{
+    background-color: var(--color-black);
+}
 
-        .white-li
-        {
-            background-color: var(--color-white);
-            border: 2px, solid, var(--color-grey);
-        }
-    }
+.header-hero .black-li a
+{
+    color: var(--color-white);
+}
+
+.header-hero .white-li
+{
+    background-color: var(--color-white);
+    border: 2px, solid, var(--color-grey);
 }
 
 .banner-section
@@ -235,19 +236,19 @@ h3
 
     padding: 5% 20% 5% 20%;
     gap: 5dvh;
-
-    p
-    {
-        font-family: var(--bold-font);
-    }
-    
-    img
-    {
-        width: 20%;
-    }
 }
 
-.members-text
+.members p
+{
+    font-family: var(--bold-font);
+}
+
+.members img
+{
+    width: 20%;
+}
+
+.members .members-text
 {
     display: flex;
     flex-direction: column;
@@ -271,17 +272,17 @@ footer
     display: flex;
     gap: 2.96dvh;
     max-width: 45%;
+}
 
-    img
-    {
-        max-width: 150px;
-        transition: .5s;
-    }
+.mini-logo-images img
+{
+    max-width: 150px;
+    transition: .5s;
+}
 
-    img:hover
-    {
-        scale: 1.1;
-    }
+.mini-logo-images img:hover
+{
+    scale: 1.1;
 }
 
 #tool-flow {
@@ -298,38 +299,38 @@ footer
     align-items: flex-start;
     text-align: center;
     gap: 4dvh;
+}
 
-    h1 
-    {
-        width: 100%;
-        font-family: var(--bold-font);
-        font-size: 3vmax;
-        margin-bottom: 2dvh;
-    }
+.photo-stages h1 
+{
+    width: 100%;
+    font-family: var(--bold-font);
+    font-size: 3vmax;
+    margin-bottom: 2dvh;
+}
 
-    img 
-    {
-        width: 100%;
-        max-width: 28dvh;
-        height: auto;
-        border-radius: 1.6dvh;
-        transition: .5s;
-        display: block;
-        margin-bottom: 1.5dvh;
-    }
+.photo-stages img 
+{
+    width: 100%;
+    max-width: 28dvh;
+    height: auto;
+    border-radius: 1.6dvh;
+    transition: .5s;
+    display: block;
+    margin-bottom: 1.5dvh;
+}
 
-    img:hover 
-    {
-        scale: 1.05;
-    }
+.photo-stages img:hover 
+{
+    scale: 1.05;
+}
 
-    h3 
-    {
-        font-family: var(--bold-font);
-        font-size: 0.95vmax;
-        text-align: center;
-        line-height: 1.2;
-    }
+.photo-stages h3 
+{
+    font-family: var(--bold-font);
+    font-size: 0.95vmax;
+    text-align: center;
+    line-height: 1.2;
 }
 
 @keyframes animationView
