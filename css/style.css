@@ -61,13 +61,12 @@ ul
 
 .hero
 {
-    height: 30dvh;
+    min-height: 324px;
 
     .header-hero
     {
         font-family: var(--medium-font);
         margin-top: 7dvh;
-        background-color: white;
         min-height: 25dvh;
         display: flex;
         flex-direction: column;
@@ -133,7 +132,7 @@ ul
 
         li:hover
         {
-            transform: scale(0.95);
+            scale: 0.95;
         }
 
         .black-li
@@ -163,26 +162,31 @@ ul
 
 .banners
 {
-    width: 135dvh;
-    height: 40dvh;
+    width: 90%;
+    max-width: 1400px;
+    max-height: 540px;
     border-radius: 20px;
     margin-top: 10dvh;
     box-shadow: 0px 4px 100px 40px var(--color-shadow);
 
-    opacity: 0;
-    transform: translateY(40px);
     transition: 0.6s;
+    animation: animationView .8s ease-out .2s both;
 }
 
-.banners.active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: .5s;
-}
-
-.banners.active:hover
+.entrance-banner
 {
-    transform: scale(1.02);
+    animation: animationView .8s ease-out .2s both;
+}
+
+.final-banner
+{
+    animation: animationView both;
+    animation-timeline: view(100%  10%);
+}
+
+.banners:hover
+{
+    scale: 1.02;
 }
 
 h3
@@ -213,10 +217,50 @@ h3
     font-size: 1vmax;
 }
 
+.stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30dvh;
+}
+
+.members
+{
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    border-radius: 2% 2% 0% 0%;
+    justify-content: space-between;
+    background-color: var(--color-dark);
+
+    padding: 5% 20% 5% 20%;
+    gap: 5dvh;
+
+    p
+    {
+        font-family: var(--bold-font);
+    }
+    
+    img
+    {
+        width: 20%;
+    }
+}
+
+.members-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2dvh;
+
+    min-width: 100%;
+    font-size: 1vmax;
+}
+
 footer
 {
     display: flex;
-    padding: 5dvh;
+    padding: 3% 3%;
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-dark);
@@ -230,13 +274,13 @@ footer
 
     img
     {
-        max-width: 15dvh;
+        max-width: 150px;
         transition: .5s;
     }
 
     img:hover
     {
-        transform: scale(1.1);
+        scale: 1.1;
     }
 }
 
@@ -257,38 +301,48 @@ footer
 
     h1 
     {
-    width: 100%;
-    font-family: var(--bold-font);
-    font-size: 3vmax;
-    margin-bottom: 2dvh;
+        width: 100%;
+        font-family: var(--bold-font);
+        font-size: 3vmax;
+        margin-bottom: 2dvh;
     }
 
     img 
     {
-    width: 100%;
-    max-width: 28dvh;
-    height: auto;
-    border-radius: 1.6dvh;
-    transition: transform 0.3s ease;
-    display: block;
-    margin-bottom: 1.5dvh;
+        width: 100%;
+        max-width: 28dvh;
+        height: auto;
+        border-radius: 1.6dvh;
+        transition: .5s;
+        display: block;
+        margin-bottom: 1.5dvh;
     }
+
     img:hover 
     {
-    transform: scale(1.05);
+        scale: 1.05;
     }
+
     h3 
     {
-    font-family: var(--bold-font);
-    font-size: 0.95vmax;
-    text-align: center;
-    line-height: 1.2;
+        font-family: var(--bold-font);
+        font-size: 0.95vmax;
+        text-align: center;
+        line-height: 1.2;
     }
 }
 
-.stages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30dvh;
+@keyframes animationView
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
